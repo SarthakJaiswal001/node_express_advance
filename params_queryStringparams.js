@@ -24,7 +24,7 @@ app.get('/api/products/:productID',(req,res)=>{//this will show only the product
 })
 app.get('/api/v1/query',(req,res)=>{
     //console.log(req.query);
-    //localhost:5000/api/v1/quuery?search=a&limit=2 is the url we are using
+    //localhost:5000/api/v1/query?search=a&limit=2 is the url we are using
     const {search,limit}=req.query;
     let sortedproducts=[...products];//here we are storing the copy of the products array
     if(search){
